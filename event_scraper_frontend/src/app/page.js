@@ -15,7 +15,7 @@ export default function Home() {
   const [resData, setResData] = useState([]);
 
   const fetchEvents = async () => {
-    const res = await fetch("http://34.67.19.243:5000/api/events");
+    const res = await fetch("/api/events");
     const data = await res.json();
     return data;
   };
