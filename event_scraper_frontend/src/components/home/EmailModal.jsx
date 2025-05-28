@@ -32,7 +32,7 @@ export function EventModal({ open, setOpen, eventData, setEventData }) {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/email", {
+      const response = await fetch("http://34.67.19.243:5000/api/email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
